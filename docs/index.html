@@ -14,7 +14,7 @@
 </p>
 
 <p id="msg"></p>
-
+<p>例: 血液型, 誕生日</p>
 <script>
     function butotnClick(){
         key = keyText.value;
@@ -23,8 +23,14 @@
         }else if (key.indexOf('名前') == 0){
             msg.innerText = '本名は語りたくないのでGoodyとでもいっておきましょう';
         }else if (key.indexOf('趣味') == 0){
-            msg.innerText = '趣味は自分自身を非検体として実験を繰り返すことであります。';
-        }else  {
+            msg.innerText = '趣味は自分自身を非検体として実験を繰り返すことでふ。';
+        }else if (key.indexOf('学校') == 0){
+            msg.innerText = '北九州私立大学の情報システム工学科で芋芋しています。';
+        }else if (key.indexOf('誕生日') == 0){
+            msg.innerText = '11月16日';
+        }else if (key.indexOf('本') == 0){
+            msg.innerText = '本はそこそこ読みまして、脳科学系の本を読むことが好きですね~~~~~';
+        }else {
             msg.innerText = 'そちらは設定しておりませんなのか特殊すぎる文字すぎると思われます。';
         }
     //msg.innerText = 'おちんぽこは' + keyText.value + 'さんですね';
