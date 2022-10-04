@@ -6,26 +6,39 @@
 </head>
 <body>
 
-<p>おちんぽこです</p>
-
+<h1>Goodyの取り扱い説明書bot</h1>
+<p>なんかキーワードを入れてみてみてみてみて</p>
 <p>
-<label>キーワード：<input type="text" id="nameText"></label>
+<label>キーワード：<input type="text" id="keyText"></label>
 <input type="button" value="てへぺろ" id="checkButton">
 </p>
 
 <p id="msg"></p>
 
 <script>
-function butotnClick(){
-  msg.innerText = 'おちんぽこは' + nameText.value + 'さんですね';
-}
+    function butotnClick(){
+        key = keyText.value;
+        if (key.indexOf('血液') == 0){
+            msg.innerText = '血液型は' + 'B型' + 'Deth';
+        }else if (key.indexOf('名前') == 0){
+            msg.innerText = '本名は語りたくないのでGoodyとでもいっておきましょう';
+        }else if (key.indexOf('趣味') == 0){
+            msg.innerText = '趣味は自分自身を非検体として実験を繰り返すことであります。';
+        }else  {
+            msg.innerText = 'そちらは設定しておりませんなのか特殊すぎる文字すぎると思われます。';
+        }
+    //msg.innerText = 'おちんぽこは' + keyText.value + 'さんですね';
+    keyText.value = '';
+    }
 
-let nameText = document.getElementById('nameText');
-nameText.value = '名前';
-let msg = document.getElementById('msg');
+    let keyText = document.getElementById('keyText');
+    
+    let msg = document.getElementById('msg');
 
-let checkButton = document.getElementById('checkButton');
-checkButton.addEventListener('click', butotnClick);
+    let checkButton = document.getElementById('checkButton');
+    
+    checkButton.addEventListener('click', butotnClick);
+    
 </script>
 
 </body>
