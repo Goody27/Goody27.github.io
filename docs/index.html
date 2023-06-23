@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>なんくるないさ</title>
+<link rel="stylesheet"href="style.css">
 </head>
 <body>
 
@@ -14,47 +15,8 @@
 </p>
 
 <p id="msg"></p>
-<p>例: 血液型, 誕生日</p>
-<script>
-    function butotnClick(){
-        key = keyText.value;
-        if (key.indexOf('血液') == 0){
-            msg.innerText = '血液型は' + 'B型' + 'Deth';
-        }else if (key.indexOf('名前') == 0){
-            msg.innerText = '本名は語りたくないのでGoodyとでもいっておきましょう';
-        }else if (key.indexOf('趣味') == 0){
-            msg.innerText = '趣味は自分自身を非検体として実験を繰り返すことでふ。';
-        }else if (key.indexOf('学校') == 0){
-            msg.innerText = '北九州私立大学の情報システム工学科で芋芋しています。';
-        }else if (key.indexOf('誕生日') == 0){
-            msg.innerText = '11月16日';
-        }else if (key.indexOf('本') == 0){
-            msg.innerText = '本はそこそこ読みまして、脳科学系の本を読むことが好きですね~~~~~';
-        }else if (key.indexOf('おちんぽこ') == 0){
-            msg.innerText = 'なかなかのしもしもでありながらお上品な言い方をするお方ですね！お友達になりましょう！';
-        }else if (key.indexOf('出身') == 0){
-            msg.innerText = '福岡県の右の方の田舎っぺ育ちです';
-        }else if (key.indexOf('アニメ') == 0){
-            msg.innerText = '最近好きなのはワンピースでヒロアカとかも良くて、Re0とかも好きですね〜';
-        }else if (key.indexOf('漫画') == 0){
-            msg.innerText = 'ワンピースですね〜人生の教訓になっている漫画で言ったら陰の実力者になりたくてなんかは教訓だす。';
-        }else if (key.indexOf('好き') == 0){
-            msg.innerText = '好きなものは機械類、でamazonのおすすめもパソコンとか機械機械していますね。\n好きな食べ物は海鮮系とか言ってますが、醤油がうまいんじゃないかなとも思うので5対5で海鮮が好きですとでも言おうかなとも思ったりしています。好きな漫画はワンピース。好きな・・・・';
-        }else {
-            msg.innerText = 'そちらは設定しておりませんなのか特殊すぎる文字すぎると思われます。';
-        }
-    keyText.value = '';
-    }
-
-    let keyText = document.getElementById('keyText');
-    
-    let msg = document.getElementById('msg');
-
-    let checkButton = document.getElementById('checkButton');
-    
-    checkButton.addEventListener('click', butotnClick);
-    
-</script>
+<p>例: 血液型, 誕生日,趣味,歌</p>
+<script src="main.js"></script>
 
 </body>
 </html>
