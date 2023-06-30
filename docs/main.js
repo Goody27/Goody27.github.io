@@ -50,6 +50,8 @@ function butotnClick(){
         msg.innerText = 'あなたかもしれません。連絡待ってます❤️';
     }else if (key.indexOf('好き') == 0){
         msg.innerText = '好きなものは機械類、でamazonのおすすめもパソコンとか機械機械していますね。\n好きな食べ物は二郎系ラーメン!\nそろそろ二郎で鍛え上げたワシワシで髪型もワシワシになってしまうのではないかと心配に心肺が追いつく頃合いだと思われます。';
+    }else if (key.indexOf('言葉') == 0){
+        msg.innerText = '最近noteに日記を書いてる。恥ずかしいからあまり見ないで欲しい。\n https://note.com/goody27';
     }else {
         msg.innerText = 'そちらは設定しておりませんなのか特殊すぎる文字すぎると思われます。';
     }
